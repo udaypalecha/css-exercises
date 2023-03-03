@@ -1,0 +1,11 @@
+.bt1{
+  background-color: #000;
+  color: #fff;
+}
+.bt2{
+  background-color: #ffff00;
+}
+.bt1,.bt2{
+  font-size: 28px;
+  font-family: Helvetica,"Times New Roman",sans-serif;
+}
