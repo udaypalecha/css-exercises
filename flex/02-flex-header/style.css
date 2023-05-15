@@ -1,6 +1,9 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -9,11 +12,15 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 0.625rem auto;
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  padding: 0.625rem;
+  display: flex;
+  gap: 1rem;
 }
 
 a {
@@ -23,3 +30,9 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+/* My solution looks similar but there are some faults in it:
+1) On extreme zoom, some list items render off-screen causing data loss (content can't be scrolled to)
+2) It does not use only Flexbox, margin has been used in .logo class.
+[3) There might be redundancy.]
+Note: Refer to solution.css in solution folder for good answer*/
