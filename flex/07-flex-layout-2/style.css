@@ -27,3 +27,64 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
 }
+
+/* Uday's Solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 0 1rem;
+}
+
+.body {
+  flex: 1;
+  display: flex;
+}
+
+.sidebar {
+  flex: 0 0 300px;
+  padding: 16px;
+}
+
+.container {
+  display: flex;
+  /* gap: 1.375rem; */
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.container > .card {
+  flex: 300px;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
